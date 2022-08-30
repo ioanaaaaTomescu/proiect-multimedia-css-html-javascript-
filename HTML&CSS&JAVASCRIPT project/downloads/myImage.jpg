@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style/meniu.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="styles/clients.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="scripts/video.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="meniu.html">Home</a>
+            <a href="clients.html">Clients</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        <h1 style="color: aqua; text-align: center;">Do you have any issues with any part of your car? </h1>
+              <h2 style="color :aqua ; padding-left: 5cm; padding-right: 5cm;" >
+                  If you have any problem with one of the part of your car, you can make here a picture and we will contact you to tell you what to do.
+              </h2>
+              <h2 style="color:aqua ; padding-left: 5cm; padding-right: 5cm;">
+                  It can be a problem that can be resolved by yourself and you don t need to come to our service.
+              </h2>
+              <h2 style="color: aqua; padding-left: 5cm; padding-right: 5cm;">
+                  Or we can see what is the problem and we will contact you to say that you will need to program ameeting to our service to resolve your problem.
+              </h2>
+              <button id="shoot" class="btn btn-danger">Take / Retake picture</button>
+        <div class="container-fluid" >
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <h3></h3>
+                    <video id="video" width="800" height="600">
+                        <p>Your browser does not support HTML 5 video.</p>
+                    </video>
+                </div>
+                <div class="col-md-8">
+                    <h3></h3>
+                    <canvas id="clearCanvas" width="0" height="0"></canvas>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <canvas id="snapshotCanvas" width="800" height="600"></canvas>
+                </div>
+                <div class="col-md-8">
+                    <div class="row" id="gallery">                        
+                    </div>
+                </div>
+                <a id="download" download="myImage.jpg" href="" onclick="download_img(this);">Download to myImage.jpg</a>
+            </div>
+        </div>
+    <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

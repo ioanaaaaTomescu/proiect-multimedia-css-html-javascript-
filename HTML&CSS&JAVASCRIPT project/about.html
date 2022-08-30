@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="style/meniu.css">
+    <link rel="stylesheet" type="text/css" href="style/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+ 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  /* text-align: center; */
+  background-color: #474e5d;
+  color: white;
+ margin-left: 5cm;
+ margin-right: 5cm;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  /* padding-left: 5cm;
+  padding-right: 5cm; */
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+  padding-left: 5cm;
+  padding-right: 5cm;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+    </head>
+    <body style="background-color: black;">
+        <div class="topnav">
+            <a  href="meniu.html">Home</a>
+            <a href="clients.html">Clients</a>
+            <a href="services.html">Services</a>
+            <a class="active" href="about.html">About</a>
+            <a href="shop.html">Shop
+            </a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="about-section" style="padding-right: 5cm; padding-left: 5cm;">
+            <h1 style="color: paleturquoise; padding-left: 4cm;"style="color: paleturquoise; text-align: center;" >WHO ARE WE?</h1>
+            <p style="color: paleturquoise;">Hello there!As our title suggests this is a place where we can explain what are doing in this service.We are a team made up of two girls who want to implement something new in this area</p>
+            <p style="color:paleturquoise ;">We all know that everything will be soon automatized.From waitress/waitresses to even robots that can entertain us. Lots or jobs will be lost forever , once the tech indudstry will rise as the time passes by. But one thing is certain, that creativity will still be needed.</p>
+            <p style="color: paleturquoise;">We want to implement a new type of service, which is very popular in the outside countries</p>
+            <p style="color: paleturquoise;">So we came with some robots that can do some of the work , instead of a human being.For example we present the robot that can change the oil of the car.No need to carry out or to worry, and the job is done in less than 30 minutes.So if we have a lot of clients, they can schedule a meeting to our service and we guarantee that everything will be done in time and safe.</p>
+          </div>
+          
+          <h2 style="text-align:center; color:aqua;">Our  Dream Team</h2>
+          <div class="row">
+          
+            <div class="column">
+              <div class="card">
+                <img src="Images/Ioana3.jpg" alt="Ioana" style="width:500px; padding-left: 5cm;">
+                <div class="container" style="padding-left: 5cm;">
+                  <h2 style="color: aqua;">Ioana Tomescu</h2>
+                  <p class="title" style="color: aqua;">CEO & co-founder</p>
+                  <p style="color: aqua;">My name is Ioana and I am 22.I am a circus artist, but i am also pasionate about cars.This is why me and me friend want to inovate this domain</p>
+                  <p style="color: aqua;">tomescuioana19@stud.ase.ro</p>
+                  <p><button class="button" style="color: aqua;"> <a style="color: aqua;" href="https://mail.google.com/mail/u/0/?fs=1&to=tomescuioana19@stud.ase.ro&su=ClientContactingAutoParadise&body=&bcc=&tf=cm">Contact</a> </button></p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column" >
+              <div class="card" >
+                <img src="Images/Larisa.png" alt="Larisa" style="width:600px;  padding-left: 7cm;">
+                <div class="container" style="padding-left: 7cm;" >
+                  <h2 style="color: aqua; ">Larisa Visan</h2>
+                  <p class="title" style="color: aqua;">CEO & founder</p>
+                  <p style="color: aqua;">I am Larisa and I am 21. I work hard to make my dreams come true.And this is one of them:to open my business and give some value to the world we live in.</p>
+                  <p style="color: aqua;">visanlarisa19@stud.ase.ro</p>
+                  <p><button class="button" style="color: aqua;"> <a style="color: aqua;" href="https://mail.google.com/mail/u/0/?fs=1&to=visanlarisa19@stud.ase.ro&su=ClientContactingAutoParadise&body=&bcc=&tf=cm">Contact</a> </button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
